@@ -145,7 +145,7 @@ if company_list:
                     include_keywords = ["update", "at the time this writing"]
                     exclude_keywords = ["keep reading"]
                     stop_keywords = ["other companies", "other company",
-                                    "other Shark Tank","Before you go", "For more updates from"]
+                                    "other Shark Tank","Before you go", "For more updates from","links below"]
 
                     #st.write(page_content)
                     matching_paragraphs_html = extract_and_filter_paragraphs_html(page_content, include_keywords, exclude_keywords, stop_keywords)
