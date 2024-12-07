@@ -7,6 +7,7 @@ import re
 # Base URLs
 company_list_url = "https://abc.com/news/920582c3-2083-45bc-81c9-95e33c5a76e9/category/706923"
 shark_tank_search_url = "https://sharktankrecap.com/?s="
+image_url = "https://cdn1.edgedatg.com/aws/v2/abc/SharkTank/showimages/5005ca5bbbe24f4b83960ac543dbe14d/2016x807-Q75_5005ca5bbbe24f4b83960ac543dbe14d.jpg"
 
 # Function to fetch the list of companies and the last updated date
 def fetch_company_list_and_last_updated():
@@ -105,6 +106,8 @@ def extract_and_filter_paragraphs_html(content, include_keywords, exclude_keywor
 # Streamlit App
 st.title("🦈 Shark Tank Company Updates")
 st.caption(f"Looks up abc.com for official companies on Shark Tank, gets current status update")
+
+st.image(image_url)
 
 st.markdown("---")
 # Step 1: Fetch and display company list
