@@ -7,7 +7,7 @@ import re
 # Base URLs
 company_list_url = "https://abc.com/news/920582c3-2083-45bc-81c9-95e33c5a76e9/category/706923"
 shark_tank_search_url = "https://sharktankrecap.com/?s="
-image_url = "https://cdn1.edgedatg.com/aws/v2/abc/SharkTank/showimages/5005ca5bbbe24f4b83960ac543dbe14d/2016x807-Q75_5005ca5bbbe24f4b83960ac543dbe14d.jpg"
+image_url = "https://cdn1.edgedatg.com/aws/v2/abc/SharkTank/blog/2003220/33715474a03bbb84821436ae7ec6b547/1600x900-Q90_33715474a03bbb84821436ae7ec6b547.jpg"
 
 # Function to fetch the list of companies and the last updated date
 def fetch_company_list_and_last_updated():
