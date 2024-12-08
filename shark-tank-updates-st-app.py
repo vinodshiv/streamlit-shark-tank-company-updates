@@ -104,11 +104,9 @@ def extract_and_filter_paragraphs_html(content, include_keywords, exclude_keywor
 
 
 # Streamlit App
-st.set_page_config(page_title="Shark Tank Company Updates", page_icon=🦈, layout="centered")
+st.set_page_config(page_title="🦈 Shark Tank Company Updates", layout="centered")
 
-
-
-st.markdown("<h1 style='text-align: center; color: #315D94;'>🦈 Shark Tank Company Updates</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: #315D94;'>🦈 Shark Tank Company Updates</h2>", unsafe_allow_html=True)
 
 #st.caption(f"Looks up abc.com for official companies on Shark Tank, gets current status update")
 st.image(image_url)
