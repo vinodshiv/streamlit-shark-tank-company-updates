@@ -108,9 +108,9 @@ st.set_page_config(page_title="🦈 Appeared on Shark Tank Updates", layout="cen
 st.markdown("<h2 style='text-align: center; color: #315D94;'>🦈 \"Appeared on Shark Tank\" Updates</h2>", unsafe_allow_html=True)
 st.caption(f"Looks up abc.com for official companies on Shark Tank, gets current status update")
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns([1,3,1])
 with col2:
-    st.image(image_url, width=600)
+    st.image(image_url)
 
 st.markdown("---")
 # Step 1: Fetch and display company list
