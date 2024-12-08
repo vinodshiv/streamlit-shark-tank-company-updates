@@ -104,16 +104,16 @@ def extract_and_filter_paragraphs_html(content, include_keywords, exclude_keywor
 
 
 # Streamlit App
-st.set_page_config(page_title="🦈 Shark Tank Company Updates", layout="centered")
+st.set_page_config(page_title="🦈 Appeared on Shark Tank Updates", layout="centered")
 
-st.markdown("<h2 style='text-align: center; color: #315D94;'>🦈 Shark Tank Company Updates</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: #315D94;'>🦈 "Appeared on Shark Tank" Updates</h2>", unsafe_allow_html=True)
 
 #st.caption(f"Looks up abc.com for official companies on Shark Tank, gets current status update")
-st.image(image_url)
+st.image(image_url, width=500)
 
 st.markdown("---")
 # Step 1: Fetch and display company list
-st.subheader(":orange[Select/Search for a company]")
+st.markdown("#### :orange[Select/Search for a company]")
 with st.spinner("Fetching company list..."):
     try:
         company_list, last_updated = fetch_company_list_and_last_updated()
@@ -134,7 +134,7 @@ if company_list:
 
         if search_results:
             # Display search results
-            st.subheader(":green[Select a search result]")
+            st.markdown("#### :green[Select a search result]")
             options = [f"{result['title']}" for result in search_results]
             selected_option = st.selectbox("Select a result to scrape:", options, label_visibility="collapsed")
 
