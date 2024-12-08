@@ -7,7 +7,7 @@ import re
 # Base URLs
 company_list_url = "https://abc.com/news/920582c3-2083-45bc-81c9-95e33c5a76e9/category/706923"
 shark_tank_search_url = "https://sharktankrecap.com/?s="
-image_url = "https://cdn1.edgedatg.com/aws/v2/abc/SharkTank/blog/2003220/33715474a03bbb84821436ae7ec6b547/1600x900-Q90_33715474a03bbb84821436ae7ec6b547.jpg"
+image_url = "https://cdn1.edgedatg.com/aws/v2/abc/SharkTank/showimages/5005ca5bbbe24f4b83960ac543dbe14d/2016x807-Q75_5005ca5bbbe24f4b83960ac543dbe14d.jpg"
 
 # Function to fetch the list of companies and the last updated date
 def fetch_company_list_and_last_updated():
@@ -105,8 +105,8 @@ def extract_and_filter_paragraphs_html(content, include_keywords, exclude_keywor
 
 # Streamlit App
 st.set_page_config(page_title="🦈 Appeared on Shark Tank Updates", layout="centered")
-st.markdown("<h2 style='text-align: center; color: #315D94;'>🦈 \"Appeared on Shark Tank\" Updates</h2>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; color: #5B5D5F;'>Find latest reported updates about companies that officially appeared on Shark Tank</p>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: #065A97;'>🦈 \"Appeared on Shark Tank\" Updates</h2>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #858688;'>Find latest reported updates about companies that officially appeared on Shark Tank</p>", unsafe_allow_html=True)
 
 
 col1, col2, col3 = st.columns([0.1,3,0.1])
