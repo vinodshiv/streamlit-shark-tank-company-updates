@@ -109,7 +109,7 @@ st.markdown("<h2 style='text-align: center; color: #315D94;'>🦈 \"Appeared on 
 st.markdown("<p style='text-align: center; color: #5B5D5F;'>Looks up abc.com for official companies on Shark Tank, gets current status update</p>", unsafe_allow_html=True)
 
 
-col1, col2, col3 = st.columns([0.5,3,0.5])
+col1, col2, col3 = st.columns([0.2,3,0.2])
 with col2:
     st.image(image_url)
 
